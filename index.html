@@ -9,30 +9,51 @@
 <body>
     <h1>Tabela</h1>
     <table>
-        <tr class="linha">
-            <td>A1</td>
-            <td>A2</td>
-            <td>A3</td>
-            <td>A4</td>
-        </tr>
-        <tr>
-            <td>B1</td>
-            <td>B2</td>
-            <td>B3</td>
-            <td>B4</td>
-        </tr>
-        <tr>
-            <td>C1</td>
-            <td>C2</td>
-            <td>C3</td>
-            <td>C4</td>
-        </tr>
-        <tr>
-            <td>D1</td>
-            <td>D2</td>
-            <td id="celula">D3</td>
-            <td>D4</td>
-        </tr>
+        <thead id="cabeca">
+            <tr>
+                <th scope="col">Aluno(a)</th>
+                <th scope="col">1°Prova</th>
+                <th scope="col">2°Prova</th>
+                <th scope="col">3°Prova</th>
+                <th scope="col">4°Prova</th>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="alunos">Jennifer</td>
+                <td>8,5</td>
+                <td>7,0</td>
+                <td>6,5</td>
+                <td>7,0</td>
+            </tr>
+            <tr>
+                <td class="alunos">Cristina</td>
+                <td>10</td>
+                <td>8,5</td>
+                <td>7,0</td>
+                <td>6,0</td>
+            </tr>
+            <tr>
+                <td class="alunos">Lucas</td>
+                <td>6,5</td>
+                <td>7,0</td>
+                <td>4,0</td>
+                <td>8,0</td>
+            </tr>
+            <tr>
+                <td class="alunos">Lucas S</td>
+                <td>8,0</td>
+                <td>10</td>
+                <td>9,0</td>
+                <td>6,5</td>
+            </tr>
+            <tfoot>
+                <th id="totalAlunos">Total de alunos</th>
+                <td>4</td>
+            </tfoot>
+        </tbody>
     </table>
 </body>
 </html>

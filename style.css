@@ -1,7 +1,29 @@
+
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Passion+One&display=swap');
+
+:root{
+
+    --font1: 'Amatic SC', sans-serif;
+    --font2: 'Bebas Neue', sans-serif;
+    --font3: 'Passion One', sans-serif;
+}
+
 table{
     width: 600px;
     height: 400px;
     border-collapse: collapse;
+    border: 2px solid black;
+}
+
+#cabeca{
+    background-color: rgba(128, 128, 128, 0.568);
+    color: white;
+    height: 30px;
+    font: italic bold 1.2em 'sans-serif';
+}
+th{
     border: 2px solid black;
 }
 
@@ -16,6 +38,19 @@ td{
     background-color: turquoise;
 }
 
-td#celula{
-    background-color: chartreuse;
+.alunos{
+    font: italic lighter 1.2em var(--font1) ;
+    color: rgb(103, 126, 79);
+}
+
+td{
+    font: italic lighter 1.5em var(--font2);
+    background-color: rgb(233, 229, 229);
+}
+th#totalAlunos{
+    background-color: cornflowerblue;
+}
+
+table>tbody>tr:nth-child(2n){
+    background-color: rgb(184, 117, 31);
 }
