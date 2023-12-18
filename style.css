@@ -18,11 +18,23 @@ table{
 }
 
 #cabeca{
-    background-color: rgba(128, 128, 128, 0.568);
+    background-color: rgb(128, 128, 128);
     color: white;
     height: 30px;
     font: italic bold 1.2em 'sans-serif';
+    position:sticky;
+    top:-1px;
+    border: 2px solid black;
 }
+
+tbody > tr:nth-child(odd){
+    background-color: rgb(164, 171, 235);
+}
+
+tbody > tr:nth-child(even){
+    background-color: rgb(134, 181, 212);
+}
+
 th{
     border: 2px solid black;
 }
@@ -45,12 +57,8 @@ td{
 
 td{
     font: italic lighter 1.5em var(--font2);
-    background-color: rgb(233, 229, 229);
 }
 th#totalAlunos{
     background-color: cornflowerblue;
 }
 
-table>tbody>tr:nth-child(2n){
-    background-color: rgb(184, 117, 31);
-}
